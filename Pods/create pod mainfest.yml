@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Mypod1
+  name: mypod1
   labels:
     dc: "In"
 spec:
