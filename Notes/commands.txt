@@ -1,0 +1,23 @@
+1.	kubectl get pods -> to show all pods
+2.	kubectl get pods/<pod_name> -> to see about specific pod
+3.	kubectl get pods -w -> to keep a watch on it.
+4.	get pods --show-labels -> to see the labels associated
+5.	get pods/<pod_name> --show-labels -> to see the labels associated with specific pod
+6.	kubectl get pods --selector "<key =/== Value>" -> Equality based selection of label (old)
+7.	kubectl get pods --selector "<key != Value>" -> Equality (Not) based selection of label (old)
+8.	kubectl get pods --selector "<key in (Value)>" -> SET based selection of label (New)
+9.	kubectl get pods --selector "<key notin (Value)>" -> SET based (Not) selection of label (New)
+10.	kubectl get pods --l "<key notin (Value)>" -> SET based (Not) selection of label (New) (--l is shorthand for –selector )
+11.	kubectl delete pods –all -> To delete all pods
+12.	kubectl delete pods/<pod_name> -> To delete specific pod
+13.	kubectl create -f <file_name> -> To make pod(s) / resources from file
+14.	kubectl apply -f <file_name> -> To make pod(s) / resources form file (helps in updates / changes)
+15.	kubectl get svc -> To see all services
+a.	kubectl get service -> To see all services
+b.	kubectl get services -> To see all services
+16.	minikube ip -> To get ip address of minikube
+17.	kubectl describe svc -> To have detailed info about services
+18.	kubectl describe svc/<svc_name> -> To have detailed info about specific service
+19.	kubectl scale rc <rc_name> --replicas=<number> -> for horizontal scaling of pods.
+20.	kubectl expose rc <rc_name> --type=<Np/cl/ext/lb> --port=svcport/appport -> To expose using RC by creating a scv. 
+21.	kubectl get all -> to see all resources at once
